@@ -1,7 +1,7 @@
 body{
     font-family: "HiraginoSans-W0","Hiragino Sans","ヒラギノ角ゴシック"; font-weight: 100;
-    background-image: url(2gradation.jpg);
     background-size: cover;
+    animation: bgchange 10s ease infinite;
 }
 .header{
     font-size: 20px;
@@ -69,3 +69,11 @@ a{
     font-size: 50px;
 }
 /*背景画像を入れたときにはpositionを消しても良いかもしれない*/
+@keyframes bgchange{
+  0%   {background-image: url(2gradation.jpg);}/*変化させたい色*/
+  25%  {background-image: url(2-1gradation.jpg);}/*変化させたい色*/
+  50%  {background-image: url(2-2gradation.jpg);}/*変化させたい色*/
+  75%  {background-image: url(2gradation.jpg);}/*変化させたい色*/
+  90%  {background-image: url(2-2gradation.jpg);}/*変化させたい色*/
+  100% {background-image: url(2gradation.jpg);}/*変化させたい色*/
+}
